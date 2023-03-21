@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('nivels', function (Blueprint $table) {
             $table->id();
+            $table->string('nombre', 50); //el 50 es el tamaño del varchar
+            
             $table->timestamps();
         });
     }
