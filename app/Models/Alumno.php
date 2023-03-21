@@ -10,8 +10,8 @@ class Alumno extends Model
     use HasFactory;
 
     public function nivel(){
-        return this->belongsTo(Nivel::class, 'nivel_id', 'id');
+        return $this->belongsTo(Nivel::class, 'nivel_id', 'id');
     }
 
-    
+
 }
